@@ -1,0 +1,453 @@
+/*====  RESET ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+body {
+  font-family: 'Red Hat Display', sans-serif !important;
+}
+
+section h2 {
+  font-weight: 400 !important;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #4f4972
+}
+
+.colorful-logo {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+
+.logo {
+  width: 200px;
+}
+
+
+.img-destaque {
+  height: 20rem !important
+}
+
+/* ---------------------------
+    MENU 
+----------------------------*/
+.nav-item {
+  margin-left: 4rem !important;
+}
+
+.nav-link {
+  color: #6E6E6E !important;
+  text-transform: uppercase;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: 
+#9d9e9e;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  width: 0%;
+  height: 1.8px;
+  background: #9d9e9e;
+  position: absolute;
+  left: 0;
+  bottom: 0.4rem;
+  transition: width 0.2s;
+}
+
+
+.hover-underline-animation:hover:after {
+  width: 100%;
+}
+
+ /* #9C2873, #4ECF89, #FB8857, #5DCACA, #88B246, #4D207E */
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  background: url("./assets/img-destaque.png") no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+
+#hero .hero-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* z-index: 10; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#hero .hero-content div {
+  color: #ffffff;
+  background-color: #00000081;
+  border-radius: 20px;
+  width: 70%;
+}
+
+#hero .hero-content h3 {
+  color: #ffffff;
+  /* margin-bottom: 15px; */
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#hero .hero-content p {
+  font-size: 20px;
+}
+
+.box {
+  inline-size: 90%;
+  overflow-wrap: break-word;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/*---------------------- 
+  CARDS MELHORES AVALIADAS
+-----------------------*/
+ .card {
+  margin-top: 20px;
+  border: none !important;
+}
+.card-body p {
+  font-size: 10px;
+}
+
+.img-size {
+  height: 10em;
+  width: 25em;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+figure {
+  transition: all 0.3s ease-in-out;
+}
+
+figcaption {
+  border-radius: 5px;
+  height: 6em;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+figcaption p{
+  text-align: left;
+  padding: 10px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  margin-bottom: -10px;
+}
+
+.best-rates-span-title {
+  color: #25304b;
+}
+
+.best-rates-span-data {
+  line-height: 10px;
+
+  font-size: 13px;
+  color: #8c9abc;
+}
+
+figure:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+/*---------------------- 
+  LIST RATINGS
+-----------------------*/
+
+#last-ratings {
+  display: flex;
+}
+
+#last-ratings-list {
+  display: flex;
+  flex-wrap: nowrap;
+  width: auto;
+  white-space: nowrap;
+  will-change: transform; /* adição da propriedade will-change */
+  transition: transform 0.3s ease; /* mudança no valor da propriedade transition */
+  scroll-behavior: smooth;
+}
+
+.rolagem {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.ratings {
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 300px;
+  padding: 10px;
+  margin-right: 80px;
+  background-color: #fff;
+}
+
+.ratings p:nth-child(1), .ratings p:nth-child(4) {
+  font-weight: bold;
+}
+
+.ratings p:nth-child(7){
+  max-width: 300px;
+  word-break: break-word;
+  white-space: pre-line;
+}
+
+.ratings p:nth-child(3), .ratings p:nth-child(5) {
+  margin-top: -10px;
+  font-size: 14px;
+  color: #bfb8b8
+}
+#nav-buttons {
+  position: relative;
+}
+
+#prev-button , #next-button {
+  border: none;
+  color: #8c9abc;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+#prev-button {
+  margin-left: 50%;
+  left: 0;
+}
+
+#next-button {
+  right: 0;
+  margin-left: 10px;
+}
+
+/*---------------------- 
+  STAR RATINGS STYLE
+-----------------------*/
+
+.star-rating {
+    font-size: 24px;
+    position: relative;
+}
+.star-rating i {
+    color: #ddd;
+}
+.star-rating i.fa-star {
+    color: gold;
+}
+.star-rating i.fa-star-half-alt::before {
+    content: '\f089';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    overflow: hidden;
+    color: gold;
+}
+
+/*-------------------------
+  FORMULARIO
+--------------------------*/
+.btn-closed {
+  margin-left: -15px !important;
+  }
+  
+.btn-size {
+  width:100px;
+}
+
+.btn-rate {
+  background-color: #88b246 !important;
+  border: none;
+}
+
+.btn-cancel {
+  background-color: #C54636 !important;
+  border: none;
+}
+
+.btn-rated {
+  background-color: #548D8c !important;
+  border: none;
+}
+
+.form-input {
+  background-color: #E3E4EA;
+}
+
+.sucessfull-sent {
+  text-align: center;
+  color: #88B246;
+  font-size:20px;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: #828282;
+}
+  
+
+.form-group {
+  padding: 15px;
+  
+}
+  
+input, textarea {
+  border: none !important;
+}
+
+.error-message {
+  color: red;
+}
+
+/*---------------- 
+  STARS RATING
+-----------------*/
+.star {
+  float: left;
+  height: 46px;
+}
+.star:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.star:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.star:not(:checked) > label:before {
+  content: '★ ';
+}
+.star > input:checked ~ label {
+  color: #ffc700;    
+}
+.star:not(:checked) > label:hover,
+.star:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.star > input:checked + label:hover,
+.star > input:checked + label:hover ~ label,
+.star > input:checked ~ label:hover,
+.star > input:checked ~ label:hover ~ label,
+.star > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+
+/*----------------------- 
+   FOOTER
+-----------------------*/
+footer {
+  width: 100%;
+  color: #474747
+  }
+
+footer p {
+  font-size: 20px;
+  letter-spacing: 0.2em;
+}
+
+/*-----------------------  
+  MEDIA QUERY
+----------------------- */
+
+@media(max-width: 991px) {
+  #hero .hero-content div {
+    height: 25vh;
+    border-radius: 5px;
+    width: 90%;
+  }
+  
+
+  #hero .hero-content h2 {
+    font-size: 28px;
+  }
+
+  #hero .hero-content p {
+    font-size: 18px;
+  }
+
+  .box {
+    inline-size: 100%;
+}
+.nav-item {
+  margin-left: 0px !important;
+}
+
+}
+
+@media (max-width: 767px) {
+  #hero .hero-content {
+    color: #ffffff;
+    border-radius: 5px;
+  }
+
+  #hero .hero-content div {
+    height: 70%;
+  }
+
+  #hero .hero-content h3 {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+
+  #hero .hero-content p {
+    font-size: 16px;
+
+  }
+
+  .box {
+    inline-size: 100%;
+  }
+
+  .nav-item {
+    margin-left: 0px !important;
+  }
+}
